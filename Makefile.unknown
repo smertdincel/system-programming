@@ -1,0 +1,10 @@
+$(CC) = gcc
+
+tarsau: FinalVersion.o
+	$(CC) FinalVersion.o -o tarsau
+	
+FinalVersion.o: FinalVersion.c
+	$(CC) -c FinalVersion.c
+	
+clean:
+	rm *.o tarsau
